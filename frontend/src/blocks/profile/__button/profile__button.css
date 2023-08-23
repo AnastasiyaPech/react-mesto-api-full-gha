@@ -1,0 +1,42 @@
+.profile__button {
+    box-sizing: border-box;
+    width: 28px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-image: url("../../../images/editbuttons.svg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-color: transparent;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.profile__button:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 910px) {
+
+    .profile__button {
+        width: 24px;
+        height: 20px;
+
+
+    }
+
+
+}
+
+@media screen and (max-width: 330px) {
+
+    .profile__button {
+        width: 20px;
+        height: 20px;
+
+
+    }
+
+
+}

@@ -1,0 +1,12 @@
+.popup__success-text {
+    color: #000000;
+    margin: 0;
+    padding-bottom: 60px;
+    margin-top: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 85%;
+    text-align: center;
+
+}

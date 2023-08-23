@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 638px) {
+
+    .list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        
+    }
+
+
+}

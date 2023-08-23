@@ -1,0 +1,9 @@
+.form__register-container {
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 30px;
+    max-width: 358px;
+    width: 100%;
+    align-items: center;
+}

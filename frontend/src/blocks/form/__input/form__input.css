@@ -1,0 +1,14 @@
+.form__input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid #CCCCCC;
+    border-bottom-color: #CCCCCC;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

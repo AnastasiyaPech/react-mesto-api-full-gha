@@ -1,0 +1,21 @@
+.list__trash-button{
+    position: absolute;
+    padding: 0;
+    right: 20px;
+    top: 20px;
+    width: 18px;
+    height: 19px;
+    background: url("../../../images/trash.svg");
+    box-sizing: border-box;
+    border: none;
+    background-repeat: no-repeat;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.list__button:hover {
+    opacity: 0.6;
+}

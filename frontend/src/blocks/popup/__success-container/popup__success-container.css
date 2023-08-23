@@ -1,0 +1,9 @@
+.popup__success-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-height: 330px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,26 @@
+.popup__button-exit_picture {
+    background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+    .popup__button-exit_picture {
+        width: 19px;
+        height: 19px;
+
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .popup__button-exit_picture {
+        width: 18px;
+        height: 18px;
+        right: 0;
+
+    }
+
+
+}

@@ -1,0 +1,30 @@
+.footer {
+    margin: 40px auto 40px;
+    max-width: 880px;
+    color: #545454;
+
+}
+
+@media screen and (max-width: 910px) {
+
+    .footer {
+        max-width: 80%;
+
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    .footer {
+        max-width: 310px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 50px;
+    }
+
+}
