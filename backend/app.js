@@ -10,8 +10,10 @@ const { errorHandler } = require('./middlewares/error-handler');
 const { validationCreateUser, validationLogin } = require('./utils/celebrate');
 const { NotFoundError } = require('./errors/notfound-error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 
 const { PORT = 3000 } = process.env;
 
