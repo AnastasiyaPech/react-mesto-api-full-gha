@@ -1,12 +1,10 @@
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import PopupWithForm from './PopupWithForm';
 import ImagePopup from './ImagePopup';
 import React, { useEffect, useState } from 'react';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
-import Card from './Card';
 import EditProfilePopup from './EditProfilePopup';
 import EditAvatarPopup from './EditAvatarPopup';
 import AddPlacePopup from './AddPlacePopup'
@@ -149,7 +147,9 @@ function App() {
                         const userEmail = res.data.email;
                         setEmail(userEmail);
                         setLoggedIn(true);
-                        navigate("/")
+                        api.updateAuthorizationToken(token);
+                        navigate("/");
+                        
                     }
                 })
                 .catch(err => {

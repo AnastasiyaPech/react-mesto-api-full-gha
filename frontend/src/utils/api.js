@@ -98,11 +98,15 @@ class Api {
       return  !isLiked ? this.putLike(cardId) : this.deleteLike(cardId);
     }
 
+    updateAuthorizationToken(token) {
+        this._headers.authorization = `Bearer ${token}`
+    }
+    // токен поменялся - дергаем апдейт
+    // Все методы используют this.headers -  значит, они будут исопльзовать новое значение 
 }
 const api = new Api(
     'https://api.vertyfront.nomoredomainsicu.ru',
     {
-        authorization: 'daaa7891-307a-4edb-9b82-7c5e6a95cac2',
-        "Content-Type": 'application/json'
+        "Content-Type": 'application/json',
     });
 export default api;
