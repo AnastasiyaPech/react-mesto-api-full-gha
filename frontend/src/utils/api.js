@@ -100,7 +100,7 @@ class Api {
 
 }
 const api = new Api(
-    'https://mesto.nomoreparties.co/v1/cohort-66',
+    'https://api.vertyfront.nomoredomainsicu.ru',
     {
         authorization: 'daaa7891-307a-4edb-9b82-7c5e6a95cac2',
         "Content-Type": 'application/json'

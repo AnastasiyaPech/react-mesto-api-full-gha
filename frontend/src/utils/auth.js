@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://auth.nomoreparties.co';
+export const BASE_URL = 'https://api.vertyfront.nomoredomainsicu.ru';
 
 //проверка ответа сервера
 function getResponseData(res) {
