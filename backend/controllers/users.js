@@ -70,7 +70,6 @@ const login = (req, res, next) => {
         return;
       }
       next(err);
-      // res.status(500).send({ message: 'Server error' });
     });
 };
 

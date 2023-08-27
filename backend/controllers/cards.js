@@ -68,6 +68,7 @@ const likeCard = (req, res, next) => {
     { $addToSet: { likes: req.user._id } },
     { new: true },
   )
+    .populate(['owner', 'likes'])
     .orFail(new Error('NoValidId'))
     .then((card) => {
       res.status(200).send(card);

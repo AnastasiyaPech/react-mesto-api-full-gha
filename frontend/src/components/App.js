@@ -24,6 +24,12 @@ function App() {
     const [isSuccessInfoTooltipStatus, setIsSuccessInfoTooltipStatus] = useState(false); // хранение состояния открытия попапа успеха или ошибки регистрации
     const navigate = useNavigate();
 
+    //проверка токена
+    useEffect(() => {
+        const token = localStorage.getItem("jwt");
+        handleCheckToken(token);
+    }, [])
+
     useEffect(() => {
         if (loggedIn) {
             api.getToUserInfo()
@@ -134,23 +140,16 @@ function App() {
             })
     }
 
-    //проверка токена
-    useEffect(() => {
-        const token = localStorage.getItem("jwt");
-        handleCheckToken(token);
-    }, [])
-
     function handleCheckToken(token) {
         if (token) {
             checkToken(token)
                 .then((res) => {
                     if (res) {
-                        const userEmail = res.data.email;
+                        const userEmail = res.email;
                         setEmail(userEmail);
                         setLoggedIn(true);
                         api.updateAuthorizationToken(token);
-                        navigate("/");
-                        
+                        navigate("/");  
                     }
                 })
                 .catch(err => {
