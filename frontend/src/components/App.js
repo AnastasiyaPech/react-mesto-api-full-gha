@@ -126,6 +126,7 @@ function App() {
                 localStorage.setItem("jwt", token);
                 setLoggedIn(true);
                 setEmail(email);
+                api.updateAuthorizationToken(token);
                 navigate("/")
             })
             .catch(err => {
