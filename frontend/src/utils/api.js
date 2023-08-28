@@ -101,8 +101,6 @@ class Api {
     updateAuthorizationToken(token) {
         this._headers.authorization = `Bearer ${token}`
     }
-    // токен поменялся - дергаем апдейт
-    // Все методы используют this.headers -  значит, они будут исопльзовать новое значение 
 }
 const api = new Api(
     'https://api.vertyfront.nomoredomainsicu.ru',

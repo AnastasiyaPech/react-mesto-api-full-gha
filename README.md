@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 130.193.52.49
+IP 130.193.52.49
 
 Frontend https://vertyfront.nomoredomainsicu.ru
 
