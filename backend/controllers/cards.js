@@ -39,7 +39,7 @@ const findCard = (req, res, next) => {
 const deleteCardId = (req, res, next) => {
   const { cardId } = req.params;
   Card.findById(cardId)
-    .populate(['owner', 'likes'])
+    // .populate(['owner', 'likes'])
     .orFail(new Error('NoValidId'))
     .then((card) => {
       if (card.owner.toString() !== req.user._id) {

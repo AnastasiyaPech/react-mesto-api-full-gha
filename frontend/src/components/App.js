@@ -28,6 +28,7 @@ function App() {
     useEffect(() => {
         const token = localStorage.getItem("jwt");
         handleCheckToken(token);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {
